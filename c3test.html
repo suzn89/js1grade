@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Web Page</title>
+</head>
+<body>
+  <script>
+    // var ans = window.confirm('인쇄할까요?');
+    // if(ans == true){
+    //   window.print();
+    // }
+
+    var ans = window.prompt('숫자를 입력하세요');
+    // prompt의 반환값은 반드시 문자열이므로 parseInt로 정수처리 해야한다.
+    ans = parseInt(ans);
+    if(ans > 5) {
+      window.alert('5보다 큽니다');      
+    } else {
+      window.alert('5보다 작습니다');  
+    }
+  </script>
+</body>
+</html>
